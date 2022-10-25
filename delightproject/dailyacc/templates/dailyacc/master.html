@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <style>
+        .first {
+            color: yellow;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid yellow;
+
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .footer {
+            color: beige;
+            height: 10%;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            border: 1px solid yellow;
+        }
+        img{
+            height: 200px;
+            width: 250px;
+            
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: yellow;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+    </style>
+</head>
+
+<body>
+
+    <div class="first">
+        <h1>DELIGHT EARTHMOVERS</h1>
+        <p>A complete solution for every Earthworks all over kerala</p>
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      
+      <div style="padding-left:16px">
+        <h2>Top Navigation Example</h2>
+        <p>Some content..</p>
+      </div>
+      
+
+
+    <div>
+       <img src="{% static 'images/image1.jpg' %}" alt="">
+    </div>
+
+
+
+    <div class="footer">
+        <p> copyright &#169; </p>
+        <p> Registered trademark&#174;</p>
+    </div>
+</body>
+
+</html>
